@@ -928,6 +928,14 @@ footer {
     display: flex;
   }
 
+  main,
+  section,
+  .container {
+    text-align: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   .hero {
     grid-template-columns: 1fr;
     grid-template-areas: "pfp" "intro" "name" "typed" "cta";
@@ -951,6 +959,20 @@ footer {
   .hero-cta {
     text-align: center;
     justify-self: center;
+  }
+
+  section > *,
+  .about-intro,
+  .project-grid,
+  .experience-grid,
+  #positions .club-leadership-container,
+  #accomplishments .accomplishments-grid,
+  #skills .skills-grid,
+  #contact .contact-container {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    text-align: center !important;
+    justify-content: center !important;
   }
 
   #contact .contact-container {
