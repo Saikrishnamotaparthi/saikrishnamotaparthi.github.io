@@ -916,8 +916,21 @@ footer {
 
 /* 11. RESPONSIVE MEDIA QUERIES */
 @media (max-width: 900px) {
+  
+  /* --- START: MOBILE LAYOUT FIX --- */
+
+  /* This is the key fix. It forces the document itself to never be wider than the screen. */
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  
+  /* --- END: MOBILE LAYOUT FIX --- */
+  
   body {
-    padding-top: calc(var(--header-height-mobile) + 20px);
+    padding-top: calc(var(--header-height-mobile) + 15px);
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .terminal-panel {
@@ -926,32 +939,34 @@ footer {
 
   .mobile-header {
     display: flex;
+    /* This is more robust than `width: 100%`. It stretches the header to the true viewport edges. */
+    left: 0;
+    right: 0;
+    width: auto;
+  }
+  
+  /* This section handles content centering, which is correct from the previous fix. */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    gap: 15px;
+    grid-template-columns: 1fr;
+    grid-template-areas: none;
   }
 
-  body,
-  main,
-  section,
-  .container,
-  .hero,
-  .about-intro,
-  .project-grid,
-  .experience-grid,
-  #positions .club-leadership-container,
-  #accomplishments .accomplishments-grid,
-  #skills .skills-grid,
+  .hero-intro, .hero-name {
+    align-self: center; 
+  }
+
+  section, .about-intro {
+    text-align: center;
+  }
+  
   #contact .contact-container {
-    text-align: center !important;
-    justify-content: center !important;
-    align-items: center !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .mobile-header,
-  .terminal-panel {
-    width: 100vw !important;
-    left: 0 !important;
-    right: 0 !important;
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
   .mobile-nav {
@@ -961,21 +976,36 @@ footer {
   }
 
   .mobile-nav-links {
-    width: 100vw !important;
+    list-style: none;
+    padding-left: 0;
+    width: 100%;
     text-align: center !important;
     align-items: center !important;
     justify-content: center !important;
   }
 }
 
+/* Replace the existing @media (max-width: 768px) block with this one */
 @media (max-width: 768px) {
   section {
     padding: 40px 25px;
   }
 
+  /* START: HEADING FIX FOR MOBILE */
   h2 {
-    font-size: 2.2rem;
+    font-size: 2rem; /* Made titles smaller */
+    letter-spacing: 1.5px; /* Adjusted spacing to be tighter */
+    gap: 15px; /* Reduced gap between icon and text */
   }
+
+  h2 i {
+    font-size: 2rem; /* Scaled down the icon to match */
+  }
+
+  h2::before, h2::after {
+    width: 45px; /* Shortened the decorative lines to fit */
+  }
+  /* END: HEADING FIX FOR MOBILE */
 
   h3 {
     font-size: 1.3rem;
@@ -988,9 +1018,32 @@ footer {
   .hero-intro {
     font-size: 2rem;
   }
+  
+  /* Center-align buttons in cards on mobile */
+  .experience-card, .project-card {
+    align-items: center;
+  }
 }
 
+/* Replace the existing @media (max-width: 480px) block with this one */
 @media (max-width: 480px) {
+  /* START: HEADING FIX FOR SMALL MOBILE */
+  h2 {
+    font-size: 1.6rem; /* Made titles much smaller to fit on one line */
+    gap: 12px;
+  }
+  
+  h2 i {
+      font-size: 1.6rem;
+  }
+
+  /* On the smallest screens, we hide the lines completely to prevent any overflow */
+  h2::before,
+  h2::after {
+    display: none;
+  }
+  /* END: HEADING FIX FOR SMALL MOBILE */
+
   .hero-name {
     font-size: 2.1rem;
   }
