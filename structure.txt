@@ -1,0 +1,47 @@
+portfolio_v5/
+│   ├── index.html
+│   ├── projects.html
+│   ├── assets/
+│   │   ├── profile.JPG
+│   │   ├── resume.pdf
+│   │   └── favicon/
+│   │       ├── android-chrome-192x192.png
+│   │       ├── android-chrome-512x512.png
+│   │       ├── apple-touch-icon.png
+│   │       ├── favicon-16x16.png
+│   │       ├── favicon-32x32.png
+│   │       ├── favicon.ico
+│   │       └── site.webmanifest
+│   ├── css/
+│   │   └── style.css
+│   ├── exp/
+│   │   ├── ibm.png
+│   │   ├── iiit.jpg
+│   │   └── shelledunet.png
+│   ├── hardware/
+│   │   ├── P1/
+│   │   │   ├── cir.png
+│   │   │   ├── doorlock.png
+│   │   │   └── project1.html
+│   │   ├── P2/
+│   │   │   ├── P21.jpg
+│   │   │   ├── P22.jpg
+│   │   │   └── project2.html
+│   │   └── P3/
+│   │       └── sub.png
+│   ├── js/
+│   │   ├── projects.js
+│   │   └── script.js
+│   └── software/
+│       ├── p1/
+│       │   ├── p11.png
+│       │   ├── p12.png
+│       │   └── project1.html
+│       ├── p2/
+│       │   ├── p21.png
+│       │   ├── p22.png
+│       │   └── project2.html
+│       └── p3/
+│           ├── p31.png
+│           ├── p32.png
+│           └── project3.html
