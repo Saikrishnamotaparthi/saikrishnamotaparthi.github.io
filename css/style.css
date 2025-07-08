@@ -928,6 +928,36 @@ footer {
     display: flex;
   }
 
+  body,
+  main,
+  section,
+  .container,
+  .hero,
+  .about-intro,
+  .project-grid,
+  .experience-grid,
+  #positions .club-leadership-container,
+  #accomplishments .accomplishments-grid,
+  #skills .skills-grid,
+  #contact .contact-container {
+    text-align: center !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+
+  .hero {
+    justify-items: center !important;
+    align-items: center !important;
+  }
+
+  .project-card,
+  .experience-card,
+  .club-card,
+  .accomplishment-card {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   main,
   section,
   .container {
