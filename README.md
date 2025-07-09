@@ -4,7 +4,7 @@
 
 This repository contains the source code for my **personal portfolio website** — a fully responsive, single-page application designed to showcase my skills, professional journey, and projects. The site reflects a **futuristic cyberpunk aesthetic** inspired by terminal interfaces and space themes.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=rocket)](https://saikrishnamotaparthi.github.io/Portfolio-/)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge&logo=rocket)](https://saikrishnamotaparthi.github.io/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-sai_krishna-blue?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/saikrishnamotaparthi)
 [![GitHub](https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github)](https://github.com/Saikrishnamotaparthi)
 
