@@ -54,7 +54,7 @@ This is a static website. No build tools or frameworks are required.
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/Saikrishnamotaparthi/Portfolio-.git
+   git clone https://github.com/Saikrishnamotaparthi/saikrishnamotaparthi.github.io-.git
    ```
 
 2. Navigate to the project folder:
