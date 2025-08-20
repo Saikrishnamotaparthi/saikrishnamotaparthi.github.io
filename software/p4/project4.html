@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ApplyIQ - AI Resume Analyzer | Sai Krishna</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300;400;500&family=Source+Code+Pro:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="../../css/style.css"> <!-- Assumes your CSS is at this path -->
+</head>
+<body>
+  <!-- Terminal-style top panel -->
+  <header class="terminal-panel">
+    <div class="terminal-prompt">
+      <span class="prompt-host">Home</span><span class="prompt-path">~/My-Portfolio/Projects/ApplyIQ</span>
+    </div>
+    <nav class="terminal-nav">
+      <a href="../../index.html#about">About</a>
+      <a href="../../index.html#projects">Projects</a>
+      <a href="../../index.html#experience">Experience</a>
+      <a href="../../index.html#positions">Positions</a>
+      <a href="../../index.html#accomplishments">Accomplishments</a>
+      <a href="../../index.html#contact">Contact</a>
+    </nav>
+    <div class="terminal-info">
+      <span class="terminal-time"></span>
+      <a href="../../assets/resume.pdf" download class="download-icon" title="Download Resume">
+        <i class="fas fa-download"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- Mobile Header -->
+  <div class="mobile-header">
+    <div class="mobile-header-left">
+      ~/Projects/ApplyIQ
+    </div>
+    <div class="mobile-header-right">
+      <span class="terminal-time"></span>
+      <a href="../../assets/resume.pdf" download class="download-icon" title="Download Resume">
+        <i class="fas fa-download"></i>
+      </a>
+      <button id="hamburger-btn" class="hamburger-btn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Menu -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <button id="close-nav-btn" class="close-nav-btn" aria-label="Close menu">×</button>
+    <ul class="mobile-nav-links">
+      <li><a href="../../index.html#about">About</a></li>
+      <li><a href="../../index.html#projects">Projects</a></li>
+      <li><a href="../../index.html#experience">Experience</a></li>
+      <li><a href="../../index.html#positions">Positions</a></li>
+      <li><a href="../../index.html#accomplishments">Accomplishments</a></li>
+      <li><a href="../../index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="theme-toggle"><button id="theme-btn">🌙</button></div>
+
+  <main class="main-content">
+    <div class="project-detail-hero">
+      <h1>ApplyIQ - AI Resume Analyzer</h1>
+      <div class="tech-stack">
+        <span class="tech-chip">n8n</span>
+        <span class="tech-chip">Google Gemini AI</span>
+        <span class="tech-chip">JavaScript (ES6+)</span>
+        <span class="tech-chip">HTML5 & CSS3</span>
+        <span class="tech-chip">GitHub Pages</span>
+      </div>
+    </div>
+
+    <div class="project-detail-layout">
+      <aside class="project-sidebar">
+        <div class="glass-card">
+          <h4><i class="fas fa-info-circle"></i> Project Info</h4>
+          <ul>
+            <li><i class="fas fa-cogs"></i><strong>Tech Stack:</strong> n8n, Gemini AI, Vanilla JS</li>
+            <li><i class="fas fa-rocket"></i><strong>Function:</strong> AI-Powered Resume vs. Job Description Analysis</li>
+            <li><i class="fas fa-user-tie"></i><strong>Category:</strong> Web App, AI/ML, HR Tech</li>
+          </ul>
+          <br>
+          <h4><i class="fas fa-link"></i> Project Links</h4>
+          <ul>
+            <li><a href="https://applyiq.saikrishnamotaparthi.tech" class="certification-link" target="_blank"><i class="fas fa-globe"></i> Live Demo</a></li>
+            <li><a href="https://github.com/Saikrishnamotaparthi/applyiq-webapp" class="certification-link" target="_blank"><i class="fab fa-github"></i> GitHub Repository</a></li>
+          </ul>
+        </div>
+      </aside>
+
+      <div class="project-main-content">
+        <div class="glass-card">
+          <h3><i class="fas fa-binoculars"></i> Overview</h3>
+          <p>ApplyIQ is a modern web application that provides job seekers with instant, AI-driven feedback on their resumes. By uploading a resume and a job description, users receive a "Fit Score" and a detailed analysis of their application's strengths, weaknesses, and missing keywords. The backend is powered entirely by a custom-built **n8n workflow** that orchestrates PDF text extraction and sends a detailed prompt to **Google's Gemini AI** for the analysis.</p>
+          
+          <ul>
+            <li>🧠 AI-Powered Analysis: Leverages Google Gemini for deep contextual matching.</li>
+            <li>📊 Dynamic "Fit Score": A sleek, animated gauge meter provides a score from 0-100.</li>
+            <li>📝 Actionable Feedback: Generates clear lists of Pros, Cons, and Missing Keywords.</li>
+            <li>🚀 No-Code/Low-Code Backend: The entire server-side logic is built and managed in n8n.</li>
+            <li>💻 Modern UI:** A stunning, fully responsive front-end built with Vanilla JS, featuring animated backgrounds and interactive file uploads.</li>
+          </ul>
+
+          <div class="project-gallery">
+            <!-- Replace these with your actual ApplyIQ screenshots -->
+            <img src="p41.png" alt="ApplyIQ UI Meter">
+            <img src="p42.png" alt="ApplyIQ Pros and Cons Analysis">
+          </div>
+        </div>
+
+        <div class="glass-card" style="margin-top: 30px;">
+          <h3><i class="fas fa-chart-line"></i> Future Improvements</h3>
+          <ul>
+            <li>📋 Cloud Deployment: Migrate the local n8n workflow to a cloud server for 24/7 uptime.</li>
+            <li>🔄 "Re-analyze" Feature: Allow users to edit their resume text on-page and see the score update.</li>
+            <li>💾 Historical Tracking: Integrate a database (e.g., Baserow, SQLite via n8n) to save and compare analysis history.</li>
+            <li>🗣️ Natural Language Suggestions: Enhance the AI prompt to generate specific sentence suggestions for resume improvement.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-actions">
+      <a href="../../projects.html" class="resume-btn secondary">
+        <i class="fas fa-arrow-left btn-icon"></i> Back to All Projects
+      </a>
+    </div>
+  </main>
+  
+  <footer>
+    <p>© 2025 Sai Krishna Motaparthi // Signal transmitted from Sector 7G.</p>
+  </footer>
+
+  <!-- Link to the correct script for sub-pages -->
+  <script src="../../js/projects.js"></script> <!-- Ensure this script handles the hamburger menu and theme toggle -->
+</body>
+</html>
